@@ -16,7 +16,7 @@ wk.register({
 		name = "LSP",
 		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code action" },
 		r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename symbol" },
-		d = { "<cmd>lua vim.diagnostic.open_float()<cr>", "Diagnostics" },
+		d = { "<cmd>lua vim.diagnostic.open_float({source = true})<cr>", "Diagnostics" },
 	},
 	n = {
 		name = "Plugins",
