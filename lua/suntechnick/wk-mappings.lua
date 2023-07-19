@@ -46,6 +46,8 @@ wk.register({
 		end,
 		"Leap",
 	},
+	["<C-d>"] = { "<C-d>zz", "Scroll down and center the view" },
+	["<C-u>"] = { "<C-u>zz", "Scroll up and center the view" },
 })
 
 wk.register({
