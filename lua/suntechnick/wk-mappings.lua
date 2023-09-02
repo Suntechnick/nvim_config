@@ -38,8 +38,8 @@ wk.register({
 	["]"] = {
 		b = { "<cmd>bnext<cr>", "Next buffer" },
 	},
-	H = { "<C-w>h", "Previous window" },
-	L = { "<C-w>l", "Next window" },
+	["<C-h>"] = { "<C-w>h", "Previous window" },
+	["<C-l>"] = { "<C-w>l", "Next window" },
 	s = {
 		function()
 			require("leap").leap({ target_windows = { vim.fn.win_getid() } })
@@ -48,6 +48,9 @@ wk.register({
 	},
 	["<C-d>"] = { "<C-d>zz", "Scroll down and center the view" },
 	["<C-u>"] = { "<C-u>zz", "Scroll up and center the view" },
+	g = {
+		d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to definition" },
+	},
 })
 
 wk.register({

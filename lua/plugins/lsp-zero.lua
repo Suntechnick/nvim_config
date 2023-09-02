@@ -25,6 +25,8 @@ return {
 			lsp.default_keymaps({ buffer = bufnr })
 		end)
 
+		require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
+
 		lsp.format_on_save({
 			format_opts = {
 				async = false,
