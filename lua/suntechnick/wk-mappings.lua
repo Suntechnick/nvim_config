@@ -6,17 +6,13 @@ wk.register({
 		f = { "<cmd>Telescope find_files<cr>", "Find file" },
 		w = { "<cmd>Telescope live_grep<cr>", "Find word" },
 	},
-	c = {
-		function()
-			require("suntechnick.utils.buffer").close()
-		end,
-		"Close buffer",
-	},
+	c = { "<cmd>BufferLinePickClose<cr>", "Pick and close the opened buffer" },
 	l = {
 		name = "LSP",
 		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code action" },
 		r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename symbol" },
-		d = { "<cmd>lua vim.diagnostic.open_float({source = true})<cr>", "Diagnostics" },
+		d = { "<cmd>lua vim.diagnostic.open_float({source = true})<cr>", "Line diagnostics" },
+		D = { "<cmd>Telescope diagnostics<cr>", "File diagnostics"}
 	},
 	n = {
 		name = "Plugins",
