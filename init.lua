@@ -21,5 +21,5 @@ au("TextYankPost", {
 	end,
 })
 
-cmd("colorscheme catppuccin-mocha")
+cmd("colorscheme gruber-darker")
 cmd("set colorcolumn=100")
