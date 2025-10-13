@@ -12,6 +12,9 @@ return {
         enabled = true,
         auto_trigger = true,
         accept = false,
+        keymap = {
+          accept = "<C-l>",
+        }
       }
     })
   end
