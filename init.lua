@@ -11,7 +11,7 @@ local au = vim.api.nvim_create_autocmd
 cmd("language en_US")
 
 vim.o.autoread = true
-cmd("au CursorHold * checktime")
+cmd("au CursorHold *.<fileextension> checktime")
 
 au("TextYankPost", {
 	group = ag("yank_highlight", {}),
