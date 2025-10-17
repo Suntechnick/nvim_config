@@ -21,3 +21,4 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 vim.g.rustfmt_autosave = 1
+vim.g.editorconfig = false
