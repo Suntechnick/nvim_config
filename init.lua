@@ -21,5 +21,11 @@ au("TextYankPost", {
 	end,
 })
 
+
 cmd("colorscheme gruber-darker")
 cmd("set colorcolumn=100")
+
+vim.lsp.enable("stylua")
+vim.lsp.enable("lua_ls")
+vim.lsp.enable("ts_ls")
+

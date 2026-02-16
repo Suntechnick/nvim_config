@@ -1,1 +1,1 @@
-return { "neovim/nvim-lspconfig", version = "*" }
+return { "https://github.com/neovim/nvim-lspconfig" }

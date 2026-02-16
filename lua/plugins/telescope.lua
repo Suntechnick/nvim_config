@@ -1,10 +1,18 @@
 return {
-  "nvim-telescope/telescope.nvim",
-  tag = "0.1.4",
-  dependencies = { "nvim-lua/plenary.nvim" },
-  config = function()
-    require("telescope").setup({
-      file_ignore_patterns = { "package%-lock.json" },
-    })
-  end
+	"nvim-telescope/telescope.nvim",
+	version = "*",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		-- optional but recommended
+		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+	},
+	config = function()
+		require("telescope").setup({
+			defaults = {
+				preview = {
+					treesitter = false,
+				},
+			},
+		})
+	end,
 }
